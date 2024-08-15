@@ -1,1 +1,5 @@
-require('./bootstrap');
+require("./bootstrap");
+
+function hello(name) {
+    return `Hello ${name}`;
+}
