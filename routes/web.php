@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/author', function () {
+    return "Hello Guest! from author Arief";
+});
+
+Route::redirect('/pemilik', '/author');
+
+Route::fallback(function () {
+    return "<h1>404</h1> <h2>Not Found</h2> <h2>Controller Not Found.</h2> <p>by Programmer Zaman Now</p> <p>Implementation by Arief Karditya Hermawan</p>";
+});
