@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InputController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -86,3 +87,5 @@ Route::post('/input/hello/first', [\App\Http\Controllers\InputController::class,
 Route::post('/input/hello/input', [\App\Http\Controllers\InputController::class, 'helloInput']);
 
 Route::post('/input/hello/array', [\App\Http\Controllers\InputController::class, 'arrayInput']);
+
+Route::post('/input/type', [\App\Http\Controllers\InputController::class, 'inputType']);
